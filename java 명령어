@@ -1,0 +1,24 @@
+1.
+var name='바꿀이름';
+ex) 콘솔에서
+var name='darkjazzbass';
+alert(""+name+""+name+" "+name+" ipsum "+name+" doller")
+
+저기서 바네임만 이름을변경하면 ""+name+""에서 이름이 바뀌어 나온다.
+
+
+2.
+
+
+'hello world'.toUpperCase()
+소문자를 대문자로 체인지
+
+3.
+
+'hello world'indexOf('world')
+ 0123456
+
+
+ 6번째부터 시작한다고 알려줌.
+
+ 4.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB - CSS</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> <a href="index.html">WEB</a></h1>
+<input type="button" value="night" onclick="                   자바명령어중 버튼을 만듬 벨류값은 나이트
+document.querySelector('body').style.backgroundColor='black';  배경은 블랙
+document.querySelector('body').style.color='white';             글자색은 하얀색
+">
+<input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor='white';           위랑 반대
+document.querySelector('body').style.color='black';
+" >
+<input id="night_day" type="button" value="night" onclick="                 <--개어려움 버튼의 아이디값을 나이트데이로 해주고 사이트에 들어가서 검사 및 콘솔에서 벨류값을 측정한후 나이트로 나왔을시.
+if(document.querySelector('#night_day').value === 'night'){                      명령어 해석 만약 문서 셀렉터의 나이트데이의 벨류값이 나이트면 바로밑의 명령어를 실행하면서 벨류값을 데이로 바꾸고
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';
+document.querySelector('#night_day').value = 'day'
+} else {                                                                          그게 아닐시
+document.querySelector('body').style.backgroundColor='white';                         밑에값을 실행하고 벨류값은 나이트로 지정한다.
+document.querySelector('body').style.color='black';
+document.querySelector('#night_day').value='night';
+}
+">
+☆만약 document.querySelector('#night_day') 말고 this.value로 체인지할시 위의 id는 지워버려도된다 예문은★
+중복이 너무많아 간결화 필수
+고로 document.querySelector('body')를 var target =document.querySelector('body') 로 묶어서
+실행.
+
+ex) var target= document.querySelector('body');
+if)(this.value ==='night');{
+  target.style.backgroundColor ='black'; 이런식으로.
+  target.style.color='white';
+}
+
+
+
+
+
+<input type="button" value="night" onclick="
+if(this.value === 'night') ~~~~~~~~~~~~이런식으로.
+
+
+<div id="grid">
+    <ol><br>
+  <p><li><a href="1.html">HTML</a></li><br>
+      <li><a href="2.html">CSS</a></li><br>
+      <li><a href="3.html">JAVA</a></li><br>
+</p></p>
+    </ol>
+    <div id="article">
+    <h2>HTML</H2>
+ <p>
+<p>   <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+과거에는 HTML에 디자인적 요소를 포함하여 작성하는 것이 일반적이었다. 다시 말해서 온갖 레이아웃, 디자인 정보를 HTML 안에 욱여넣다 보니 HTML의 본연의 목적인 구조화된 문서가 아닌 디자인을 위한 문서로 전락하고 말았다. 표를 작성해야 하는 <table> 태그가 레이아웃을 구성하는 용도로 쓰이는 등으로 인해 HTML 소스코드만 보면 이 문서가 어떤 문서인지 전문가조차 알기 힘든 상황이었다.[2]
+</P>
+    </div>
+</div>
+</html>
